@@ -1,15 +1,22 @@
-# Basic Keylogging Simulation (Educational)
+# Basic Network Sniffer in Python
 
 ## Description
-This project demonstrates a basic keylogging mechanism using Python in
-a controlled and safe environment. It captures keystrokes locally and
-stores them in a file to understand how such attacks work.
+This project is a basic network sniffer developed in Python using the Scapy library.
+It captures live network traffic and analyzes packets by identifying:
+- Source and destination IP addresses
+- Protocol type (TCP, UDP, ICMP)
+- Source and destination ports
 
-## Tools Used
+## Tools & Technologies
 - Python 3
-- pynput library
+- Scapy
 - Kali Linux
+- VirtualBox
 
-## How to Run
-```bash
-python3 basic_keylogger.py
+## How It Works
+The program uses Scapy's sniff() function to capture packets in real time.
+Each packet is inspected to determine its protocol and relevant header information.
+
+## Usage
+Run the script with root privileges:
+sudo python3 basic_sniffer.py
